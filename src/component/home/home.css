@@ -1,0 +1,127 @@
+
+.home-container{
+    background-image: url("C:\Users\wilfried\3D Objects\flutteur\public\assets\BG.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 8%;
+  
+}
+.me{
+    width: 20%;
+    padding: 2%;
+    background:var(--vert1);
+    background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: -10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: -100px;
+    
+}
+.name{
+    color: white;
+    font-weight: bold;
+}
+.pro::before{
+    font-weight: bolder;
+    color: rgb(209, 205, 205);
+    content:'';
+    animation:animate infinite 16s;
+    }
+    @keyframes animate {
+        0%{
+            content:'Freelancer';
+        }
+    
+        20%{
+            content:'Developpeur ';
+        }
+        40%{
+            content:'Community manager';
+        }
+    
+        60%{
+            content:'youtubeur';
+        }
+    
+        80%{
+            content:'blogeur';
+        }
+    
+        100%{
+            content:'Assistant virtuel';
+        }
+}
+.part-home{
+  
+    padding-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 9%;
+}
+.part-home .gauche{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.fil-container{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid #1E1E1E;
+    background: transparent;
+    overflow: hidden;
+    object-fit: cover;
+}
+.tel .space{
+    color: rgb(187, 183, 183);
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+}
+.space img{
+    width: 20px;
+    height: 20px;
+}
+.droite{
+    margin-right: 3%;
+}
+.fil-container img{
+    width: 98%;
+    height: 98%;
+}
+.network{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5%;
+}
+.network img{
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 428px) {
+    .home-container{
+        padding-top: 34%;
+        height: 80vh;
+    }
+    .part-home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .fil-container{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+    }
+    .part-home .droite{
+        display: none;
+    }
+}

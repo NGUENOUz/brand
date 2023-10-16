@@ -1,0 +1,168 @@
+#about{
+  height: auto;
+  padding: 2%;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 9%;
+    overflow: hidden;
+    padding-top: 2%;
+
+}
+.about-gauche img{
+    width: 500px;
+    height: 400px;
+}
+.about-droite{
+    margin-left: 4%;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    justify-content: left;
+
+}
+.langage-list{
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+.langage-list li{
+    list-style: none;
+    padding: 0.5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border:  1px solid var(--vert1);
+    border-radius: 8px;
+}
+.btn-cv {
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+    padding: 1.5%;
+    background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn-cv img{
+    width: 30px;
+    height: 30px;
+}
+
+.info-plus{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 80%;
+  margin-left: 9%;
+  overflow: hidden;
+  color: white;
+}
+.info-plus h1{
+  text-align: center;
+  align-items: center;
+  padding: 2%;
+  font-weight: bold;
+}
+
+.info-plus .cart-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-plus .cart-info .cart{
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: 2px 2px 9px black ;
+  padding: 2%;
+  text-align: center;
+}
+.cart-info .cart img{
+  width: 50px;
+  height: 50px;
+}
+.cart-info-description{
+text-align: center;
+}
+
+.cart-info .cart:hover{
+  transition: ease-in all 2s;
+  background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+}
+
+
+.profil2{
+  display:none;
+}
+.svg-top{
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+
+
+
+@media screen and (max-Width:428px) {
+  .about-container{
+    padding-top: 3%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+  }
+  .about-gauche img{
+    width: 250px;
+    height: 250px;
+  }  
+  .about-droite{
+    text-align:center;
+    padding: 1%;
+    
+  }
+  .about-droite p{
+    text-align: left;
+    width: 100%;
+  }
+  .svg-top{
+    display: none;
+  }
+  .btn-cv{
+    margin-left: 10%;
+   
+  }
+  .profil2{
+    display: flex;
+  }
+  .cart-info {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+  }
+  .cart-info .cart{
+   margin-top: 8%;
+    max-width:100%;
+    height: auto;
+    padding: 3%;
+    margin-left: 7%;
+    transition: ease-in all 2s;
+  }
+  .cart-info .cart:hover{
+    transition: ease-in all 2s;
+    background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+  }
+
+  .info-plus{
+    padding-top: 14%;
+  }
+}

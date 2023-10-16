@@ -1,0 +1,115 @@
+.contact .container{
+    width: 80%;
+    margin-left: 9%;
+}
+.contact h1{
+    padding: 6%;
+    color:  linear-gradient(to right, #000066 14%, #ff00ff 100%);
+    text-align: center;
+    font-weight: bold;
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .container .gauche{
+    width: 50%;
+}
+.contact .container .gauche,.droite,form{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.gauche .adresse{
+    width: 80%;
+    margin-top: 2%;
+    display:  flex;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.425);
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    
+    padding: 1%;
+}
+.adresse .icon{
+    border-radius: 50%;
+width: 30px;
+height: 30px;
+padding: 3%;
+box-shadow: 2px 2px 4px #08ac3ed2;
+padding: 3%;
+align-items: center;
+text-align: center;
+object-fit: cover;
+ 
+}
+.icon img{
+   
+    width: 20px;
+    height: 20px;   
+}
+.adresse .info{
+    margin-left: 5%;
+}
+.droite{
+    width: 50%;
+}
+.droite form{
+    width: 100%;
+
+}
+.droite form{
+    padding: 2%;
+}
+form input,textarea{
+    border-radius: 8px;
+    border-color: transparent;
+    background: transparent;
+    color: white;
+    padding: 2%;
+    margin-top: 2%;
+}
+form input,textarea:hover{
+    box-shadow: 2px 2px 9px rgba(6, 160, 65, 0.5);
+
+}
+::placeholder{
+    color: rgb(184, 182, 182);
+}
+form input{
+    height: 20px;
+    width: 90%;
+}
+form textarea{
+   
+    width: 90%;
+    height: 150px;
+    resize: none;
+    border: none;
+    box-shadow: 2px 2px 9px rgba(6, 160, 65, 0.5);
+}
+form button{
+    width: 40%;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 12px;
+    background: transparent;
+    border-color: aqua;
+    color: white;
+    cursor: pointer;
+    transition:ease-in-out all 2s;
+    
+}
+form button:hover{
+    background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+    transition:ease-in-out all 2s;
+}
+footer{
+    padding: 2%;
+    text-align: center;
+    color: wheat
+    ;
+}
