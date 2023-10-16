@@ -5,7 +5,9 @@ import Header from '../header/header'
 function Home() {
   return (
     <div>
-     <div className="home-container" style={{backgroundImage:'../assets/BG.jpg',backgroundSize:'cover',height:'100vh',paddingTop:'8%'}}>
+     <div className="home-container" 
+     
+     style={{ backgroundImage: `url("assets/BG.jpg")`,backgroundSize:'cover',height:'100vh',paddingTop:'8%'}}>
       {/* <Header/> */}
        <div className="part-home">
         <div className="gauche">
