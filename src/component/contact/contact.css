@@ -117,5 +117,34 @@ footer{
 
 @media screen and (max-Width:428px){
    
+    .contact .container{
+        display: flex;
+        flex-direction: column-reverse;
     
+    }
+    .container .gauche{
+           width: 100%;
+           width: 300px;
+           margin-top: 15%;
+   
+    }
+    .container .gauche .adresse{
+       width: 300px;
+    }
+    .more-info{
+        width:300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .more-info .social-link{
+
+        align-items: center;
+        margin-left: 10%;
+    }
+    .container .droite{
+        width: 100%;
+    }
+    .container .droite form{
+       
+    }
 }

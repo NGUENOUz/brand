@@ -1,4 +1,9 @@
 
+.home-container{
+    padding-top: 8%;
+    
+}
+
 .me{
     width: 20%;
     padding: 2%;
@@ -100,14 +105,18 @@
     padding: 0.5%;
     list-style: none;
 }
+.network li{
+    margin-left: 3%;
+}
 .network img{
     width: 20px;
     height: 20px;
 }
 @media screen and (max-width: 428px) {
     .home-container{
-        padding-top: 34%;
+        padding-top: 40%;
         height: 80vh;
+        
     }
     .part-home{
         display: flex;

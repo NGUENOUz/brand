@@ -7,7 +7,7 @@ function Home() {
     <div>
      <div className="home-container" 
      
-     style={{ backgroundImage: `url("assets/BG.jpg")`,backgroundSize:'cover',height:'100vh',paddingTop:'8%'}}>
+     style={{ backgroundImage: `url("assets/BG.jpg")`,backgroundSize:'cover'}}>
       {/* <Header/> */}
        <div className="part-home">
         <div className="gauche">
