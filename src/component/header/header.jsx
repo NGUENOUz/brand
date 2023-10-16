@@ -53,7 +53,7 @@ function Header() {
           </ul>
       </div>
       <div className="whatsapp">
-          <a href="wa.me/678378976">
+          <a href="https://wa.me/message/XCFB5J3NBV5JI1">
               <img src="../assets/whatsapp.png" alt="" />
           </a>
       </div>
