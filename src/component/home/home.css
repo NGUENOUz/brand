@@ -114,9 +114,9 @@
 }
 @media screen and (max-width: 428px) {
     .home-container{
-        padding-top: 40%;
+        padding-top: 30%;
         height: 80vh;
-        
+
     }
     .part-home{
         display: flex;
