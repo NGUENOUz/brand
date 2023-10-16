@@ -86,6 +86,8 @@
   box-shadow: 2px 2px 9px black ;
   padding: 2%;
   text-align: center;
+  transition: ease-in all 10s;
+  
 }
 .cart-info .cart img{
   width: 50px;
@@ -96,7 +98,8 @@ text-align: center;
 }
 
 .cart-info .cart:hover{
-  transition: ease-in all 2s;
+  transform: scale(1.1);
+  
   background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
 }
 

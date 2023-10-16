@@ -30,9 +30,9 @@ function Home() {
                 </div>
             </div>
             <div className="network">
-                <li><a href=""><img src="../assets/facebook.png" alt="Ma page facebook" /></a></li>
-                <li><a href=""><img src="../assets/youtube.png" alt="Ma chaine youtube" /></a></li>
-                <li><a href=""><img src="../assets/linkedin.png" alt="Mon compte linkedlin" /></a></li>
+                <li> <a href="https://www.facebook.com/monnouveauguide/"><img src="../assets/facebook.png" alt="Ma page facebook" /></a></li>
+                <li>  <a href="https://www.youtube.com/channel/UCBg4mnLqcqHk_zaeEKi6ctg"><img src="../assets/youtube.png" alt="Ma chaine youtube"/></a></li>
+                <li>  <a href="https://www.linkedin.com/in/wilfried-dzomeu-b060771b9/"><img src="../assets/linkedin.png" alt="Mon compte linkedlin" /></a></li>
             </div>
         </div>
         <div className="droite">
