@@ -113,6 +113,9 @@
     height: 20px;
 }
 @media screen and (max-width: 428px) {
+    .me{
+        padding: 4%;
+    }
     .home-container{
         padding-top: 30%;
         height: 80vh;
