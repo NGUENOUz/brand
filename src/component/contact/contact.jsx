@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css'
 
 function Contact() {
 
-
+  const [mailError,setMailError]=useState(false);
+  
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+       
+    let User_email= document.forms["form"]["User_first_name"].value;
+    if(User_email==""){
+      setMailError(!mailError)
+    }
+    else{
+      alert(User_email)
+    }
 
     emailjs.sendForm('service_0nip0ds',
      'template_3lczlhh',
@@ -25,10 +34,27 @@ function Contact() {
       });
   };
 
+  const Error=() => {
+    return(
+      <div className="error" 
+      style={{padding:"1%",color:"white",
+      borderRadius:"4%",boxShadow:"2px 2px 9px Red",
+      width:"30%",
+      transition:"ease-in-out  12s",
+      textAlign:"center"
+     
+
+      
+      }}>
+        Tout les champs sont obligatoire
+      </div>
+    )
+  }
+
 
   return (
     <div>
-      <div className="contact"
+      <section className="contact" id='Contact'
       
       style={{
         backgroundImage: `url("assets/fond1.png")`,
@@ -37,7 +63,7 @@ function Contact() {
         height:"auto",
         color:"white",
       }}
-      > <h1>Contact me</h1>
+      > <h1>Contact me</h1>   {mailError && <Error/>}
         <div className="container">
         <div className="gauche">
             <div className="adresse">
@@ -76,7 +102,7 @@ function Contact() {
          </div>
 
          <div className="droite">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} name='form'>
                 <input type="text" name="User_first_name" id="first_name" placeholder='Enter your first name' />
                 <input type="text" name="User_last_name" id="Last_name" placeholder='Enter your Last Name' />
                 <input type="text" name="User_email" id="Email" placeholder='Enter your Email' />
@@ -90,7 +116,7 @@ function Contact() {
         <footer>
         <p>Wilfried Dzomeu All right reserved </p>
       </footer>
-      </div>
+      </section>
      
     </div>
   )

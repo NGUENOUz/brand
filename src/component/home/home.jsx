@@ -1,14 +1,17 @@
 import React from 'react'
 import './home.css'
 import Header from '../header/header'
+import About from '../about/about'
+import Skills from '../skill/Skills'
+import Contact from '../contact/contact'
 
 function Home() {
   return (
     <div>
-     <div className="home-container" 
+       <Header/>
+     <div className="home-container"  id='Home'
      
      style={{ backgroundImage: `url("assets/BG.jpg")`,backgroundSize:'cover'}}>
-      {/* <Header/> */}
        <div className="part-home">
         <div className="gauche">
             <span className="me">I'm</span>
@@ -37,12 +40,15 @@ function Home() {
         </div>
         <div className="droite">
             <div className="fil-container">
-              <img src="../assets/profil.png" alt="me" />
+              <img src="../assets/me.png" alt="me" />
             </div>
            
         </div>
        </div>
      </div>
+   
+
+
     </div>
   )
 }

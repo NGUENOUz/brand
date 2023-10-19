@@ -1,3 +1,6 @@
+#Skill{
+    padding-top: 5%;
+}
 .Technical h1{
     text-align: center;
     font-weight: bold;
@@ -86,6 +89,9 @@ width: 40%;
 }
 
 @media screen and (max-width: 428px){
+    #Skill{
+        padding-top: 20%;
+    }
     .skills{
         flex-direction: column;
     }

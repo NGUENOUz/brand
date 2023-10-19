@@ -7,7 +7,7 @@ function About() {
   return (
     <>
 
-     <div id='about'>
+     <section id='about'>
       <div className="about-container">
         <div className="about-gauche">
           <div className="svg-top">
@@ -74,7 +74,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div> 
+    </section> 
     </>
   )
 }

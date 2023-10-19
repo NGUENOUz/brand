@@ -1,3 +1,15 @@
+#Contact{
+    padding-top: 3%;
+}
+.span{
+    text-align: center ;
+    position: absolute;
+    padding: 4%;
+    color: white;
+    box-shadow: 4px 4px 8px red;
+    align-items: center;
+    
+}
 .contact .container{
     width: 80%;
     margin-left: 9%;
@@ -116,6 +128,10 @@ footer{
 
 
 @media screen and (max-Width:428px){
+
+    #Contact{
+        padding-top: 13%;
+    }
    
     .contact .container{
         display: flex;

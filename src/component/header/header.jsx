@@ -1,6 +1,9 @@
 import React from "react";
+
 import { useEffect,useState } from "react";
 import './header.css'
+import '../about/about.jsx';
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -22,11 +25,10 @@ function Header() {
       <div className="part-gauche">
           <ul>
           <li ><a href="" className='color1'>Home</a></li>
-          <li><a href="" className='color1'>About</a></li>
-          <li><a href="" className='color1'> projects</a></li>
-          <li><a href="" className='color1'>skills</a></li>
-          <li><a href="" className='color1'>Contact</a></li>
-          <li><a href=""className='color1' >Contact</a></li>
+              <li><a href="#about" className='color1'>About</a></li>
+              <li><a href="#Project" className='color1'> projects</a></li>
+              <li><a href="#Skill" className='color1'>Skills</a></li>
+              <li><a href="#Contact"className='color1' >Contact</a></li>
           </ul>
       </div>
       <div className="part-droite">
@@ -46,10 +48,10 @@ function Header() {
       <div className="list">
           <ul className='options'>
               <li ><a href="" className='color1'>Home</a></li>
-              <li><a href="" className='color1'>About</a></li>
-              <li><a href="" className='color1'> projects</a></li>
-              <li><a href="" className='color1'>Skills</a></li>
-              <li><a href=""className='color1' >Contact</a></li>
+              <li><a href="#about" className='color1'>About</a></li>
+              <li><a href="#Project" className='color1'> projects</a></li>
+              <li><a href="#Skill" className='color1'>Skills</a></li>
+              <li><a href="#Contact"className='color1' >Contact</a></li>
           </ul>
       </div>
       <div className="whatsapp">
