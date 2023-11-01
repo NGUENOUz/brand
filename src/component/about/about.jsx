@@ -20,9 +20,9 @@ function About() {
 </svg>
 
  </div>
-          <img src="../assets/me.png" alt="" className='profil2' />
+          <img src="../assets/me.png" alt="" className='profil2'  data-aos="fade-right"/>
         </div>
-        <div className="about-droite">
+        <div className="about-droite"data-aos="fade-right">
              <h1>About Me</h1>
              <p>Hello, I’m a wilfried, web-developer based on Douala. I have rich experience in
                    web site design & building and customization. Also I am good at</p>
@@ -50,7 +50,7 @@ function About() {
 
       <div className="info-plus">
         <h1>What I Do</h1>
-        <div className="cart-info">
+        <div className="cart-info" data-aos="fade-right">
           <div className="cart">
             <img src="../assets/ui.png" alt="ui Desygn image" />
             <p>UI/UX DESYGN</p>

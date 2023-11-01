@@ -162,7 +162,6 @@ text-align: center;
     height: auto;
     padding: 3%;
     margin-left: 5%;
-    transition: ease-in all 2s;
   }
   .cart-info .cart:hover{
     transition: ease-in all 2s;
