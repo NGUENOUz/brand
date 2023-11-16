@@ -19,7 +19,7 @@
 }
 .about-droite{
     margin-left: 4%;
-    color: white;
+    color: rgb(14, 13, 13);
     text-align: left;
     font-size: 18px;
     justify-content: left;
@@ -40,19 +40,70 @@
     border:  1px solid var(--vert1);
     border-radius: 8px;
 }
-.btn-cv {
-    margin-top: 2%;
-    align-items: center;
-    text-align: center;
-    padding: 1.5%;
-    background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
-    color: white;
-    width: 200px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-around;
-
+.custom-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
 }
+.btn-cv{
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background: rgb(251, 175, 33);
+  background: linear-gradient(0deg, rgb(251, 149, 33) 0%, rgb(231, 128, 10)100%);
+  color: #fff;
+  overflow: hidden;
+  font-weight: bolder;
+ 
+}
+.btn-cv:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-cv:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-cv:hover{
+opacity: .7;
+}
+.btn-cv:active{
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@keyframes shiny-btn1 {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
 .btn-cv img{
     width: 30px;
     height: 30px;
@@ -65,13 +116,19 @@
   width: 80%;
   margin-left: 9%;
   overflow: hidden;
-  color: white;
+  color: rgb(41, 40, 40);
 }
 .info-plus h1{
   text-align: center;
   align-items: center;
   padding: 2%;
   font-weight: bold;
+  font-size: 30px;
+}
+.cart h3{
+  font-size: 16px;
+  text-align: center;
+
 }
 
 .info-plus .cart-info{
@@ -83,25 +140,31 @@
   width: 250px;
   height: 200px;
   border-radius: 8px;
-  background: transparent;
-  box-shadow: 2px 2px 9px black ;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 2%;
   text-align: center;
-  transition: ease-in all 10s;
+  transition: ease all 0.5s;
   
+}
+.cart p{
+  text-align: left;
 }
 .cart-info .cart img{
   width: 50px;
   height: 50px;
+  
 }
 .cart-info-description{
 text-align: center;
 }
 
 .cart-info .cart:hover{
-  transform: scale(1.1);
-  
-  background: linear-gradient(to top left, #0033cc 32%, #00cc66 100%);
+  padding-left:2%;
+    padding-right: 2%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   transform: scale(1.2);
+
 }
 
 
@@ -145,8 +208,46 @@ text-align: center;
   }
   .btn-cv{
     margin-left: 10%;
+    background: var(--vert1);
+    background: linear-gradient(0deg,  #f59505 0%, #f59505 100%);
+    color: #fff;
+    overflow: hidden;
    
   }
+  .btn-cv:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-cv:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-cv:hover{
+  opacity: .7;
+}
+.btn-cv:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
   .profil2{
     display: flex;
   }

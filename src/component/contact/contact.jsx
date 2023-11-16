@@ -2,24 +2,38 @@ import React, { useState } from 'react'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css'
+import validation from './validation';
 
 function Contact() {
 
-  const [mailError,setMailError]=useState(false);
+  // state des composants
+
+  const [values, setValue]=useState({  
+
+    User_first_name:'',
+    User_last_name:'',
+    User_email:'',
+    message:''
+  });
+
+  const [errors , setError]=useState({});
   
   const form = useRef();
 
+  // comportement des composants 
+
+  const handleInput= (event)=>{
+    
+     // ici on fait une copy de notre objet innitiale , on ajoute les nouvelle valeurs de nos input 
+    const valueCopy={...values,[event.target.name]:event.target.value}
+    setValue(valueCopy);
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
-       
-    let User_email= document.forms["form"]["User_first_name"].value;
-    if(User_email==""){
-      setMailError(!mailError)
-    }
-    else{
-      alert(User_email)
-    }
 
+     setError(validation(values))
+       
     emailjs.sendForm('service_0nip0ds',
      'template_3lczlhh',
       form.current,
@@ -34,24 +48,8 @@ function Contact() {
       });
   };
 
-  const Error=() => {
-    return(
-      <div className="error" 
-      style={{padding:"1%",color:"white",
-      borderRadius:"4%",boxShadow:"2px 2px 9px Red",
-      width:"30%",
-      transition:"ease-in-out  12s",
-      textAlign:"center"
-     
-
-      
-      }}>
-        Tout les champs sont obligatoire
-      </div>
-    )
-  }
-
-
+  
+// affichage des composants 
   return (
     <div>
       <section className="contact" id='Contact'
@@ -63,7 +61,7 @@ function Contact() {
         height:"auto",
         color:"white",
       }}
-      > <h1>Contact me</h1>   {mailError && <Error/>}
+      > <h1>Contact me</h1>   
         <div className="container">
         <div className="gauche">
             <div className="adresse">
@@ -103,11 +101,19 @@ function Contact() {
 
          <div className="droite">
             <form ref={form} onSubmit={sendEmail} name='form'>
-                <input type="text" name="User_first_name" id="first_name" placeholder='Enter your first name' />
-                <input type="text" name="User_last_name" id="Last_name" placeholder='Enter your Last Name' />
-                <input type="text" name="User_email" id="Email" placeholder='Enter your Email' />
+                
+                {errors.User_first_name&& <p style={{color:"red"}}>{errors.User_first_name}</p>}
+                <input type="text" name="User_first_name" id="first_name" placeholder='Enter your first name' onChange={handleInput}/>
 
-                <textarea name="message" id="message" cols="30" rows="10" placeholder='message : '></textarea>
+
+                {errors.User_last_name&& <p style={{color:"red"}}>{errors.User_last_name}</p>}
+                <input type="text" name="User_last_name" id="Last_name" placeholder='Enter your Last Name' onChange={handleInput}/>
+
+                {errors.User_email&& <p style={{color:"red"}}>{errors.User_email}</p>}
+                <input type="text" name="User_email" id="Email" placeholder='Enter your Email'onChange={handleInput} />
+
+                {errors.User_first_name&& <p style={{color:"red"}}>{errors.User_first_name}</p>}
+                <textarea name="message" id="message" cols="30" rows="10" placeholder='message : 'onChange={handleInput}></textarea>
 
                 <button type="submit">Send Message</button>
             </form>

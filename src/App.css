@@ -5,7 +5,7 @@
   --color1:rgb(17, 17, 17);
   --back1:#363638; 
   --theme:orange;
-  --vert1:#06be3d;
+  --vert1:#f59505;
   font-family: 'Corbel','consolas';
 }
 *{
@@ -13,6 +13,6 @@
   
 }
 .app{
-  background: #1e1e1e;
+  background: rgb(252, 251, 253);
 }
 

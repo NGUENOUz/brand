@@ -1,4 +1,4 @@
-#Skill{
+/* #Skill{
     padding-top: 5%;
 }
 .Technical h1{
@@ -111,5 +111,207 @@ width: 40%;
         width: 95%;
     }
     
+} */
+
+
+
+
+/* Partie pour le cercle  */
+
+.box {
+    height: 496px;
+    position: relative;
+    width: 498px;
+  }
+  
+  .box .group {
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 249px/248px;
+    height: 496px;
+    left: 0;
+    top: 0;
+    width: 498px;
+  }
+  
+  .box .overlap {
+    height: 382px;
+    left: 103px;
+    position: absolute;
+    top: 93px;
+    width: 362px;
+  }
+  
+  .box .overlap-group {
+    height: 351px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 327px;
+  }
+  
+  .box .ellipse {
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 146.5px/157.5px;
+    height: 315px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 293px;
+  }
+  
+  .box .img {
+    height: 41px;
+    left: 249px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 52px;
+  }
+  
+  .box .ellipse-2 {
+    height: 41px;
+    left: 275px;
+    object-fit: cover;
+    position: absolute;
+    top: 269px;
+    width: 52px;
+  }
+  
+  .box .ellipse-3 {
+    height: 41px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 310px;
+    width: 52px;
+  }
+  
+  .box .overlap-group-wrapper {
+    height: 176px;
+    left: 32px;
+    position: absolute;
+    top: 75px;
+    width: 233px;
+  }
+  
+  .box .div {
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: #000000;
+    height: 176px;
+    position: relative;
+    width: 231px;
+  }
+  
+  .box .ellipse-4 {
+    height: 43px;
+    left: 89px;
+    object-fit: cover;
+    position: absolute;
+    top: 19px;
+    width: 52px;
+  }
+  
+  .box .text-wrapper {
+    color: #000000;
+    font-family: "Chivo-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 75px;
+    width: 191px;
+  }
+  
+  .box .ellipse-5 {
+    height: 41px;
+    left: 310px;
+    object-fit: cover;
+    position: absolute;
+    top: 134px;
+    width: 52px;
+    background: #000;
+    border-radius: 50%;
+  }
+  
+  .box .ellipse-6 {
+    height: 41px;
+    left: 146px;
+    object-fit: cover;
+    position: absolute;
+    top: 341px;
+    width: 52px;
+    background: #000;
+    border-radius: 50%;
+  }
+  
+  .box .ellipse-7 {
+    height: 41px;
+    left: 40px;
+    object-fit: cover;
+    position: absolute;
+    top: 292px;
+    width: 52px;
+  }
+  
+  .box .ellipse-8 {
+    height: 41px;
+    left: 40px;
+    object-fit: cover;
+    position: absolute;
+    top: 157px;
+    width: 52px;
+  }
+  
+  .box .ellipse-9 {
+    height: 41px;
+    left: 126px;
+    object-fit: cover;
+    position: absolute;
+    top: 51px;
+    width: 52px;
+  }
+  
+  .box .ellipse-wrapper {
+    background-color: #66635c;
+    border-radius: 38.5px/36.5px;
+    height: 73px;
+    left: 224px;
+    position: absolute;
+    top: 14px;
+    width: 77px;
+  }
+  
+  .box .ellipse-10 {
+    height: 41px;
+    left: 13px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 52px;
+  }
+  
+/* finde la partie pour le cercle   */
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 80%;
+    margin-left: 9%;
+    text-align: center;
+    align-items: center;
 }
 
+.skills .gauche{
+
+}
+.skills .gauche h1{
+    font-size: 60px;
+    font-weight: bold;
+}

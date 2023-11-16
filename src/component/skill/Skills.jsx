@@ -39,11 +39,7 @@ function Skills() {
     <> 
       <section className="feature-projet" id='Project'
           style={{
-        backgroundImage: `url("assets/fond1.png")`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        height:"100vh",
-        color:"white",
+        
       }}
       
       >
@@ -62,12 +58,12 @@ function Skills() {
                      </div> 
 
                      <div className="hot-droite">
-                        <p>{Hot[index].categorie}</p>
-                        <h1 className='hot-titre'>{Hot[index].titre}</h1>
+                        <p className='categorie'>{Hot[index].categorie}</p>
+                        <h2 className='hot-titre'>{Hot[index].titre}</h2>
                         
                         <p className='hot-description'>{Hot[index].description}</p>
 
-                        <div className="btn-plus">
+                        <div className=" custom-btn btn-cv">
                           <span>Plus de Détails</span>
                         </div>
               </div>
@@ -88,218 +84,49 @@ function Skills() {
         </section>
 
       <section className="skills" id='Skill'>
-        <div className="gauche">
-               <div className="Technical">
-                <h1>Technical skill</h1>
-                <div className="T1">
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Html5</span>
-                      <span>90%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'90%'}}>
+         
+       
+          <div className="gauche">
+            <h1>Mes compétences </h1>
+            <h3>professionel</h3>
+            <p className="">
+                  J’utilise facebook ads pour creer des publiciter et gerer des communauter facebook
+                </p>
+          </div>
 
-                      </div>
 
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Css3</span>
-                      <span>80%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'80%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Java script</span>
-                      <span>70%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'70%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>React js</span>
-                      <span>60%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'60%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>ASP.net</span>
-                      <span>60%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'60%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Wordpress</span>
-                      <span>60%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'60%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                </div>
-
-                <div className="T1">
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Facebook ADS</span>
-                      <span>80%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'80%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Photoshop</span>
-                      <span>70%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'70%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>c#</span>
-                      <span>50%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'50%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>React natif</span>
-                      <span>50%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'50%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Kotlin</span>
-                      <span>40%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'40%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                   <div className="progress-bar">
-                    <div className="name">
-                      <span>Spring Boot</span>
-                      <span>40%</span>
-                    </div>
-                    <div className="bar-container">
-                      <div className="percentage-bar" style={{width:'40%'}}>
-
-                      </div>
-
-                    </div>
-                   </div>
-                </div>
-
-               </div>
+          <div className="droite">
+          <h3>Technique</h3>
+          <div className="box">
+      <div className="group">
+        <div className="overlap">
+          <div className="overlap-group">
+            <div className="ellipse" />
+            <img className="img" alt="Ellipse" src="./assets/meta.png" />
+            <img className="ellipse-2" alt="Ellipse" src="./assets/css3.png" />
+            <img className="ellipse-3" alt="Ellipse" src="./assets/figma.png" />
+            <div className="overlap-group-wrapper">
+              <div className="div">
+                <img className="ellipse-4" alt="Ellipse" src="image.png" />
+                <p className="text-wrapper">
+                  J’utilise facebook ads pour creer des publiciter et gerer des communauter facebook
+                </p>
+              </div>
+            </div>
+          </div>
+          <img className="ellipse-5" alt="Ellipse" src="./assets/git.png"/>
+          <img className="ellipse-6" alt="Ellipse" src="./assets/chatgpt.png"/>
         </div>
-
-        <div className="droite">
-                <h1>Toools of work</h1>
-
-                <div className="tools-cart-container">
-                  <div className="tools-cart" >
-                      <img src="../assets/vs_code.png" alt="" />
-                      <span>Visual studio code</span>
-                  </div>
-                  <div className="tools-cart">
-                     <img src="../assets/figma.png" alt="" />
-                     <span>Figma</span>
-                  </div>
-                  <div className="tools-cart">
-                     <img src="../assets/my_sql.png" alt="" />
-                     <span>My sql</span>
-                  </div>
-                  <div className="tools-cart">
-                    <img src="../assets/photoshop.png" alt="" />
-                    <span>Photoshop</span>
-                  </div>
-                  <div className="tools-cart">
-                    <img src="../assets/canva.png" alt="" />
-                    <span>Canvas</span>
-                  </div>
-                  <div className="tools-cart">
-                     <img src="../assets/postman.png" alt="" />
-                     <span>postman</span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/android_studio.png" alt="" />
-                    <span>Android studio</span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/wordpress.png" alt="" />
-                      <span>Wordpress</span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/vs.png" alt="" />
-                     <span>Visual studio </span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/git.png" alt="" />
-                     <span>Git hub </span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/meta.png" alt="" />
-                     <span>Facebook ADS</span>
-                  </div>
-                  <div className="tools-cart">
-                  <img src="../assets/chatgpt.png" alt="" />
-                     <span>Chat GPT </span>
-                  </div>
-                </div>
+        <img className="ellipse-7" alt="Ellipse" src="./assets/wordpress.png" />
+        <img className="ellipse-8" alt="Ellipse" src="./assets/postman.png"/>
+        <img className="ellipse-9" alt="Ellipse" src="./assets/photoshop.png"/>
+        <div className="ellipse-wrapper">
+          <img className="ellipse-10" alt="Ellipse" src="./assets/React.png" />
         </div>
+      </div>
+    </div>
+          </div>
+      
       </section>
   </>
   )

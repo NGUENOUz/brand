@@ -2,7 +2,8 @@ import React from 'react'
 import './about.css';
 import { useState } from 'react';
 function About() {
-
+  const cvName= "cv"
+  const cvLien="./assets/cv.pdf"
  
   return (
     <>
@@ -23,7 +24,7 @@ function About() {
           <img src="../assets/me.png" alt="" className='profil2'  data-aos="fade-right"/>
         </div>
         <div className="about-droite"data-aos="fade-right">
-             <h1>About Me</h1>
+             <h1 style={{fontSize:"60px"}}>About Me</h1>
              <p>Hello, I’m a wilfried, web-developer based on Douala. I have rich experience in
                    web site design & building and customization. Also I am good at</p>
 
@@ -38,10 +39,19 @@ function About() {
                 <li>...</li>
             </div>
 
-            <div className="btn-cv">
+            <button className=" custom-btn btn-cv"   
+            
+            onClick={() => {
+              const a = document.createElement("a");
+              a.href = cvLien;
+              a.download = cvName;
+              a.click();
+            }}
+            
+            >
                 <span>Dowload My Cv</span>
                 <img src="../assets/telechargement.png" alt="" />
-            </div>
+            </button>
 
 
         </div>
@@ -53,13 +63,13 @@ function About() {
         <div className="cart-info" data-aos="fade-right">
           <div className="cart">
             <img src="../assets/ui.png" alt="ui Desygn image" />
-            <p>UI/UX DESYGN</p>
+            <h3>UI/UX DESYGN</h3>
             <p>En tant que UI/UX desygner , je conçois les maquettes de site et application , je fais également dans la création des logo et affiches  </p>
           </div>
 
           <div className="cart">
             <img src="../assets/web_dev.png" alt="ui Desygn image" />
-            <p>WEB DEVELOPMENT</p>
+            <h3>WEB DEVELOPMENT</h3>
             <p className='cart-info-description'>
               je développe des applications web , des sites vitrine , des applications multiplateforme et je fais aussi l'intégration des sites web
             </p>
@@ -67,7 +77,7 @@ function About() {
 
           <div className="cart">
             <img src="../assets/marketing.png" alt="ui Desygn image" />
-            <p>MARKETING</p>
+            <h3>MARKETING</h3>
             <p>
               Vous avez besoin d'un community manager , d'un brand ambassador , ou encore d'un apporteur d'affaire ,alors contactez moi 
             </p>

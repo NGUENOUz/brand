@@ -80,13 +80,15 @@
     margin-left: 12px;
 }
 .fil-container{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 550px;
     border-radius: 50%;
     border: 1px solid #1E1E1E;
     background: transparent;
     overflow: hidden;
     object-fit: cover;
+    margin-top: -10%;
+    box-shadow: rgba(241, 241, 245, 0.25) 0px 50px 100px -20px, rgba(250, 247, 247, 0.3) 0px 30px 60px -30px, rgba(244, 245, 247, 0.35) 0px -2px 6px 0px inset;
 }
 .tel .space{
     color: rgb(187, 183, 183);
@@ -105,7 +107,8 @@
 }
 .fil-container img{
     width: 98%;
-    height: 98%;
+    height: 100%;
+    margin-top: -10%;
 }
 .network{
     display: flex;
